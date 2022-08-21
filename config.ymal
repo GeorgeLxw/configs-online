@@ -3,7 +3,7 @@ socks-port: 7703
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :7704
+external-controller: 127.0.0.1:8804
 
 proxy-providers:
   大机场:
