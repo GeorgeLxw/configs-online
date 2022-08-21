@@ -41,7 +41,8 @@ proxy-groups:
     type: select
     proxies:
       - 最快🚗
-      - 西部数据
+      - 西部数据-auto
+      - 西部数据-fallback
       - GLaDOS
       - 大机场
       - 手动
