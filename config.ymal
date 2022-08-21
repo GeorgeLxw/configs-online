@@ -117,8 +117,15 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 1800
 
-  - name: "西部数据"
+  - name: "西部数据-auto"
     type: url-test
+    use:
+      -  westdata
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 1800
+    
+  - name: "西部数据-fallback"
+    type: fallback
     use:
       -  westdata
     url: 'http://www.gstatic.com/generate_204'
