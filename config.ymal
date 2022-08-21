@@ -41,7 +41,7 @@ proxy-groups:
     type: select
     proxies:
       - 最快🚗
-      - 西部数据-auto
+      - 西部数据
       - 西部数据-fallback
       - GLaDOS
       - 大机场
@@ -68,7 +68,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 最快🚗
-      - 西部数据-auto
+      - 西部数据
       - 西部数据-fallback
       - GLaDOS
       - 大机场
@@ -80,7 +80,7 @@ proxy-groups:
       - 代理
       - DIRECT
       - 最快🚗
-      - 西部数据-auto
+      - 西部数据
       - 西部数据-fallback
       - GLaDOS
       - 大机场
@@ -91,7 +91,7 @@ proxy-groups:
     proxies:
       - 代理
       - 最快🚗
-      - 西部数据-auto
+      - 西部数据
       - 西部数据-fallback
       - GLaDOS
       - 大机场
@@ -102,32 +102,26 @@ proxy-groups:
     proxies:
       - 代理
       - 最快🚗
-      - 西部数据-auto
+      - 西部数据
       - 西部数据-fallback
       - GLaDOS
       - 大机场
       - 手动
 
   - name: "GLaDOS"
-    type: url-test
+    type: select
     use:
       - glados
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 1800
 
   - name: "大机场"
-    type: url-test
+    type: select
     use:
       -  大机场
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 1800
 
-  - name: "西部数据-auto"
-    type: url-test
+  - name: "西部数据"
+    type: select
     use:
       -  westdata
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 1800
     
   - name: "西部数据-fallback"
     type: fallback
